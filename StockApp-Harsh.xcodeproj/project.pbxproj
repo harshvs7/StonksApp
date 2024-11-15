@@ -16,6 +16,12 @@
 		565E64442CE79D360006D672 /* StockApp_HarshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64432CE79D360006D672 /* StockApp_HarshTests.swift */; };
 		565E644E2CE79D360006D672 /* StockApp_HarshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E644D2CE79D360006D672 /* StockApp_HarshUITests.swift */; };
 		565E64502CE79D360006D672 /* StockApp_HarshUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E644F2CE79D360006D672 /* StockApp_HarshUITestsLaunchTests.swift */; };
+		565E64612CE79D680006D672 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64602CE79D680006D672 /* Models.swift */; };
+		565E64632CE79D720006D672 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64622CE79D720006D672 /* ViewModel.swift */; };
+		565E64652CE7A1B10006D672 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64642CE7A1B10006D672 /* HomeViewController.swift */; };
+		565E64672CE7A5620006D672 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64662CE7A5620006D672 /* HeaderView.swift */; };
+		565E64692CE7A9570006D672 /* StockDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64682CE7A9570006D672 /* StockDetailTableViewCell.swift */; };
+		565E646B2CE7C0A30006D672 /* ProfitLossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E646A2CE7C0A30006D672 /* ProfitLossView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		565E64492CE79D360006D672 /* StockApp-HarshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StockApp-HarshUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		565E644D2CE79D360006D672 /* StockApp_HarshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockApp_HarshUITests.swift; sourceTree = "<group>"; };
 		565E644F2CE79D360006D672 /* StockApp_HarshUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockApp_HarshUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		565E64602CE79D680006D672 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		565E64622CE79D720006D672 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		565E64642CE7A1B10006D672 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		565E64662CE7A5620006D672 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		565E64682CE7A9570006D672 /* StockDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailTableViewCell.swift; sourceTree = "<group>"; };
+		565E646A2CE7C0A30006D672 /* ProfitLossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitLossView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,10 @@
 		565E642B2CE79D340006D672 /* StockApp-Harsh */ = {
 			isa = PBXGroup;
 			children = (
+				565E645F2CE79D5B0006D672 /* Model */,
+				565E645E2CE79D560006D672 /* ViewModel */,
+				565E645D2CE79D490006D672 /* Controllers */,
+				565E645C2CE79D420006D672 /* Views */,
 				565E642C2CE79D340006D672 /* AppDelegate.swift */,
 				565E642E2CE79D340006D672 /* SceneDelegate.swift */,
 				565E64302CE79D340006D672 /* ViewController.swift */,
@@ -125,6 +141,40 @@
 				565E644F2CE79D360006D672 /* StockApp_HarshUITestsLaunchTests.swift */,
 			);
 			path = "StockApp-HarshUITests";
+			sourceTree = "<group>";
+		};
+		565E645C2CE79D420006D672 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				565E64662CE7A5620006D672 /* HeaderView.swift */,
+				565E64682CE7A9570006D672 /* StockDetailTableViewCell.swift */,
+				565E646A2CE7C0A30006D672 /* ProfitLossView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		565E645D2CE79D490006D672 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				565E64642CE7A1B10006D672 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		565E645E2CE79D560006D672 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				565E64622CE79D720006D672 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		565E645F2CE79D5B0006D672 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				565E64602CE79D680006D672 /* Models.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565E64632CE79D720006D672 /* ViewModel.swift in Sources */,
 				565E64312CE79D340006D672 /* ViewController.swift in Sources */,
 				565E642D2CE79D340006D672 /* AppDelegate.swift in Sources */,
+				565E646B2CE7C0A30006D672 /* ProfitLossView.swift in Sources */,
+				565E64692CE7A9570006D672 /* StockDetailTableViewCell.swift in Sources */,
 				565E642F2CE79D340006D672 /* SceneDelegate.swift in Sources */,
+				565E64612CE79D680006D672 /* Models.swift in Sources */,
+				565E64652CE7A1B10006D672 /* HomeViewController.swift in Sources */,
+				565E64672CE7A5620006D672 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +501,12 @@
 				DEVELOPMENT_TEAM = QC8MN3WX27;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StockApp-Harsh/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Stonks;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,11 +530,12 @@
 				DEVELOPMENT_TEAM = QC8MN3WX27;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StockApp-Harsh/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Stonks;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
