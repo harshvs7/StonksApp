@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    private var viewModel = StockViewModel()
+    var viewModel = StockViewModel()
     
     private let headerView: HeaderView = {
         let view = HeaderView(title: "Portfolio")
@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         return view
     }()
     
-    private let stockTableView: UITableView = {
+    let stockTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.rowHeight = UITableView.automaticDimension
@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         return tableView
     }()
     
-    private let activityIndicator: UIActivityIndicatorView = {
+    let activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.color = .gray
         activityIndicator.style = .large
@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
         return activityIndicator
     }()
     
-    private let profitLossView: ProfitLossView = {
+    let profitLossView: ProfitLossView = {
         let view = ProfitLossView()
         view.isHidden = true
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -92,7 +92,7 @@ extension HomeViewController {
         apiCall()
     }
     
-    private func apiCall() {
+    func apiCall() {
         viewModel.fetchStockHoldings { [weak self] success in
             guard let self = self else { return }
             DispatchQueue.main.async {

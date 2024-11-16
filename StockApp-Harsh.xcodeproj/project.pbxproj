@@ -22,6 +22,20 @@
 		565E64672CE7A5620006D672 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64662CE7A5620006D672 /* HeaderView.swift */; };
 		565E64692CE7A9570006D672 /* StockDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64682CE7A9570006D672 /* StockDetailTableViewCell.swift */; };
 		565E646B2CE7C0A30006D672 /* ProfitLossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E646A2CE7C0A30006D672 /* ProfitLossView.swift */; };
+		565E646D2CE8F4610006D672 /* MockStockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E646C2CE8F4610006D672 /* MockStockViewModel.swift */; };
+		565E646F2CE8F49F0006D672 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E646E2CE8F49F0006D672 /* HomeViewControllerTests.swift */; };
+		565E64702CE8F57B0006D672 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64602CE79D680006D672 /* Models.swift */; };
+		565E64712CE8F57C0006D672 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64602CE79D680006D672 /* Models.swift */; };
+		565E64722CE8F57F0006D672 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64622CE79D720006D672 /* ViewModel.swift */; };
+		565E64732CE8F57F0006D672 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64622CE79D720006D672 /* ViewModel.swift */; };
+		565E64742CE8F5810006D672 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64642CE7A1B10006D672 /* HomeViewController.swift */; };
+		565E64752CE8F5820006D672 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64642CE7A1B10006D672 /* HomeViewController.swift */; };
+		565E64762CE8F5850006D672 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64662CE7A5620006D672 /* HeaderView.swift */; };
+		565E64772CE8F5850006D672 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64662CE7A5620006D672 /* HeaderView.swift */; };
+		565E64782CE8F5880006D672 /* StockDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64682CE7A9570006D672 /* StockDetailTableViewCell.swift */; };
+		565E64792CE8F5880006D672 /* StockDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E64682CE7A9570006D672 /* StockDetailTableViewCell.swift */; };
+		565E647A2CE8F58B0006D672 /* ProfitLossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E646A2CE7C0A30006D672 /* ProfitLossView.swift */; };
+		565E647B2CE8F58B0006D672 /* ProfitLossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565E646A2CE7C0A30006D672 /* ProfitLossView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +75,8 @@
 		565E64662CE7A5620006D672 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		565E64682CE7A9570006D672 /* StockDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailTableViewCell.swift; sourceTree = "<group>"; };
 		565E646A2CE7C0A30006D672 /* ProfitLossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitLossView.swift; sourceTree = "<group>"; };
+		565E646C2CE8F4610006D672 /* MockStockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStockViewModel.swift; sourceTree = "<group>"; };
+		565E646E2CE8F49F0006D672 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				565E64432CE79D360006D672 /* StockApp_HarshTests.swift */,
+				565E646C2CE8F4610006D672 /* MockStockViewModel.swift */,
+				565E646E2CE8F49F0006D672 /* HomeViewControllerTests.swift */,
 			);
 			path = "StockApp-HarshTests";
 			sourceTree = "<group>";
@@ -324,7 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565E64722CE8F57F0006D672 /* ViewModel.swift in Sources */,
 				565E64442CE79D360006D672 /* StockApp_HarshTests.swift in Sources */,
+				565E646F2CE8F49F0006D672 /* HomeViewControllerTests.swift in Sources */,
+				565E647A2CE8F58B0006D672 /* ProfitLossView.swift in Sources */,
+				565E64782CE8F5880006D672 /* StockDetailTableViewCell.swift in Sources */,
+				565E646D2CE8F4610006D672 /* MockStockViewModel.swift in Sources */,
+				565E64702CE8F57B0006D672 /* Models.swift in Sources */,
+				565E64742CE8F5810006D672 /* HomeViewController.swift in Sources */,
+				565E64762CE8F5850006D672 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +358,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565E64752CE8F5820006D672 /* HomeViewController.swift in Sources */,
+				565E64772CE8F5850006D672 /* HeaderView.swift in Sources */,
+				565E64712CE8F57C0006D672 /* Models.swift in Sources */,
 				565E64502CE79D360006D672 /* StockApp_HarshUITestsLaunchTests.swift in Sources */,
+				565E64732CE8F57F0006D672 /* ViewModel.swift in Sources */,
 				565E644E2CE79D360006D672 /* StockApp_HarshUITests.swift in Sources */,
+				565E64792CE8F5880006D672 /* StockDetailTableViewCell.swift in Sources */,
+				565E647B2CE8F58B0006D672 /* ProfitLossView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
